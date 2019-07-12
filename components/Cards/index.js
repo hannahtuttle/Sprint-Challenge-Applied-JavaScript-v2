@@ -24,6 +24,15 @@ axios.get('https://lambda-times-backend.herokuapp.com/articles')
 .then(data => {
     // const cardKeys = Object.keys(data.data.articles)
     // console.log(cardKeys)
+    // const dataArticles = []
+    // cardKeys.forEach((n) => {
+    //     a = `data.data.articles.${n}`
+    //     dataArticles.push(a)
+    // })
+    // console.log(dataArticles)
+    // dataArticles.forEach((n) => {
+    //     cardsContainer.appendChild(cards(n)) 
+    // })
     const javascriptCards = data.data.articles.javascript
     javascriptCards.forEach((n) => {
         cardsContainer.appendChild(cards(n)) 
